@@ -1,1 +1,23 @@
 # 5thvideo
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enter Code (REVERSE +1)</title>
+</head>
+<body>
+<input id="codeInput" placeholder="Enter code...">
+<button onclick="checkCode()">Submit</button>
+<p id="result"></p>
+
+<script>
+function checkCode() {
+    const code = document.getElementById("codeInput").value;
+    if (code === "SECRET123") {
+        document.getElementById("result").innerText = "?v=wKBSVk2E9p8";
+    } else {
+        document.getElementById("result").innerText = "Incorrect code.";
+    }
+}
+</script>
+</body>
+</html>
